@@ -6,9 +6,9 @@ import './App.scss';
 
 
 class App extends Component {
-    hidedrawer() {
-        document.getElementById("drawer1").className = "mdl-layout__drawer"; // only keep mdl-layout__drawer, is-visible should be removed
-    }
+    // hidedrawer() {
+    //     document.getElementById("drawer1").className = "mdl-layout__drawer"; // only keep mdl-layout__drawer, is-visible should be removed
+    // }
     render() {
         return (
         <div className="demo-big-content">
@@ -28,8 +28,8 @@ class App extends Component {
                 <Navigation>
                     <Link to="/resume" onClick="hidedrawer()">Resume</Link>
                     {/* <Link to="/projects">Projects</Link> */}
-                    <Link to="/writings" onClick="hidedrawer()">Writings</Link>
-                    <Link to="/contact" onClick="hidedrawer()">Contact</Link>
+                    <Link to="/writings">Writings</Link>
+                    <Link to="/contact">Contact</Link>
                 </Navigation>
             </Drawer>
             <Content>
