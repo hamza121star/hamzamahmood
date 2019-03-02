@@ -25,6 +25,8 @@ $linkColor:#EFC07B;
 $boldColor:#4a4e51;
 $time:0.6s;
 
+$break-small: 380px;
+
 a{color:$linkColor; text-decoration:none;}
 
 body {
@@ -50,6 +52,24 @@ h3{
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.left-email{
+    text-align: center;
+    background: rgb(75, 18, 72);
+    color: white;
+    margin-top: -14px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    z-index: 20;
+}
+.drawer{
+  width:400px;
+  text-align: center;
+  span{
+    background: #4B1248;
+    padding-left: 0px !important;
+  }
+}
 .header-color{
   background: #F0C27B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -122,7 +142,8 @@ h3{
   background-image: url("./images/white-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50px auto;
+  display: inline-flex;
+  background-size: 48px;;
   -webkit-transition: background-image 0.4s ease-in-out !important;
   transition: background-image 0.4s ease-in-out !important;
   .fa-linkedin{
@@ -142,6 +163,69 @@ h3{
     color: #1769ff;
     
   }
+}
+
+.about-left-sec{
+  text-align: right;
+  font-weight: 900;
+  font-size: 1.8em;
+  margin-top:10px;
+}
+.to-pad-right{
+  padding-right: 25px;
+}
+.to-pad-left{
+  padding-left: 25px;
+}
+
+.about-right-sec{
+  text-align: left;
+  font-weight: 200;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 430px){
+  .banner-text h1 {
+    font-size: 40px !important;
+  }
+  .banner-text{
+    width: 80% !important;
+  }
+  #social:hover{
+    background-image: url("./images/white-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    background-size: 38px;
+  }
+  .to-pad-left{
+    padding-left: 0px;
+  }.to-pad-right{
+    padding-right: 0px;
+  }
+  .about-left-sec{
+    text-align: center;
+    font-size:1.5em !important;
+  }
+  .about-right-sec{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3em;
+  }
+  .social-links{
+    display: inline-flex !important;
+    width: 100% !important;
+    padding: 0px 22px !important;
+    margin-bottom: 20px !important;
+    i {
+      font-size: 3.5em !important;
+      padding: 0px 0px 0px 0px !important;
+    }
+  }
+  .square-feel{
+    height: 550px;
+  }
+  
 }
 
 
@@ -254,7 +338,7 @@ h3{
 }
 
 .social-links{
-  display: flex;
+  display: inline;
   justify-content: space-between;
   width: 50%;
   margin: auto;
@@ -263,7 +347,7 @@ h3{
 .social-links i{
   color: white;
   font-size: 5em;
-  padding: 10px;
+  padding: 10px 35px;
 }
 
 .projects-grid{

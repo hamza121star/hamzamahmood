@@ -40,15 +40,15 @@ class Landing extends Component {
                 </Grid>
                 <Grid className="about-section">
                     <Cell col={6}>
-                        <div style={{paddingRight: '25px'}}>
-                            <h4 style={{textAlign: 'right', fontWeight: '900', fontSize:'1.8em', marginTop:'10px'}}>
+                        <div className="to-pad-right">
+                            <h4 className="about-left-sec">
                                 Hi. I am Hamza, a software developer based in New York City. Currently an MS candidate for Technological Systems Management in Stony Brook University.
                             </h4>
                         </div>
                     </Cell>
                     <Cell col={6}>
-                        <div style={{ paddingLeft: '25px' }}>
-                            <p style={{textAlign: 'left', fontWeight: '200', fontSize: '1.3em'}}>
+                        <div  className="to-pad-left">
+                            <p className="about-right-sec">
                             I am passionate about solving problems, building solutions that positively impact the lives of those around
                             me. I have done extensive work in UI development and with in depth understanding of UX, I have the ability to take applications
                             from start to launch. 
@@ -81,7 +81,7 @@ class Landing extends Component {
                             color = '#f6dbf5'
                             logo ='fas fa-lightbulb'
                             heading = 'Curious Thinker'
-                            description = 'Often I would come across phenomenons that would my pique my mind to thing and ponder upon it for hours on end. challenge the status-quo to help create new breakthroughs to break away from '
+                            description = "I am always open to challanges and healthy discussions that pique my mind and allow me to reflect upon the contemporary problems of today, what solutions work and which ones do not. This allows me to achieve a more in-depth understanding of the world around me and to form possible out-of-the-box solutions while keeping the assumptions and expectations of the stakeholder in check. My approach involves treating existing problems as if they are unique, which always gives way to learning something new."
                         />
                     </div>
                 </Grid>

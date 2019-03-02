@@ -19,11 +19,12 @@ class App extends Component {
                     <a href={"https://mail.google.com/mail/?view=cm&fs=1&to=hamza.mahmood1993@gmail.com"} rel="noopener noreferrer" target="_blank">Contact</a>
                 </Navigation>
             </Header>
-            <Drawer title={<Link style={{textDecoration: 'none', color:'black'}}
+            <Drawer className="drawer" title={<Link style={{textDecoration: 'none', color:'white'}}
             to="/">Hamza Mahmood</Link>}>
+            <div className="left-email">hamza.mahmood1993@gmail.com</div>
                 <Navigation>
                     <Link to="/resume">Resume</Link>
-                    <Link to="/projects">Projects</Link>
+                    {/* <Link to="/projects">Projects</Link> */}
                     <Link to="/writings">Writings</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
