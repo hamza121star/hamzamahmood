@@ -6,6 +6,9 @@ import './App.scss';
 
 
 class App extends Component {
+    hidedrawer() {
+        document.getElementById("drawer1").className = "mdl-layout__drawer"; // only keep mdl-layout__drawer, is-visible should be removed
+    }
     render() {
         return (
         <div className="demo-big-content">
@@ -19,14 +22,14 @@ class App extends Component {
                     <a href={"https://mail.google.com/mail/?view=cm&fs=1&to=hamza.mahmood1993@gmail.com"} rel="noopener noreferrer" target="_blank">Contact</a>
                 </Navigation>
             </Header>
-            <Drawer className="drawer" title={<Link style={{textDecoration: 'none', color:'white'}}
+            <Drawer id="drawer1" className="drawer" title={<Link style={{textDecoration: 'none', color:'white'}}
             to="/">Hamza Mahmood</Link>}>
             <div className="left-email">hamza.mahmood1993@gmail.com</div>
                 <Navigation>
-                    <Link to="/resume">Resume</Link>
+                    <Link to="/resume" onClick="hidedrawer()">Resume</Link>
                     {/* <Link to="/projects">Projects</Link> */}
-                    <Link to="/writings">Writings</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/writings" onClick="hidedrawer()">Writings</Link>
+                    <Link to="/contact" onClick="hidedrawer()">Contact</Link>
                 </Navigation>
             </Drawer>
             <Content>
