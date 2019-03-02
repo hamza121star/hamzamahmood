@@ -30,7 +30,7 @@ class App extends Component {
                     <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
                     {/* <Link to="/projects">Projects</Link> */}
                     <Link to="/writings" onClick={() => this.hideToggle()}>Writings</Link>
-                    <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
+                    <a href={"https://mail.google.com/mail/?view=cm&fs=1&to=hamza.mahmood1993@gmail.com"} rel="noopener noreferrer" target="_blank">Contact</a>
                 </Navigation>
             </Drawer>
             <Content>
