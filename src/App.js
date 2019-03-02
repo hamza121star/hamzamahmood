@@ -25,7 +25,7 @@ class App extends Component {
             </Header>
             <Drawer className="drawer" title={<Link style={{textDecoration: 'none', color:'white'}}
             to="/">Hamza Mahmood</Link>}>
-            <div class="left-email">hamza.mahmood1993@gmail.com</div>
+            <div class="left-email"><a style={{textDecoration: 'none', color:'white'}} href={"https://mail.google.com/mail/?view=cm&fs=1&to=hamza.mahmood1993@gmail.com"} rel="noopener noreferrer" target="_blank">hamza.mahmood1993@gmail.com</a></div>
                 <Navigation>
                     <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
                     {/* <Link to="/projects">Projects</Link> */}

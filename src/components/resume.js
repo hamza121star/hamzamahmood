@@ -46,7 +46,7 @@ class Resume extends Component {
                             <hr style={{borderTop: '5px dotted #2E182D', margin: '10px 40px'}} />
                         </div>
                         <Grid className="contact-info clearfix">
-                            <Cell col={4}>
+                            <Cell className="left-details" col={4}>
                                 <ul className="list-titles" style={{listStyle: 'None'}}>
                                     <li>Phone</li>
                                     <li>Mail</li>
@@ -55,7 +55,7 @@ class Resume extends Component {
                                     <li>Twitter</li>
                                 </ul> 
                             </Cell>
-                            <Cell col={8}>
+                            <Cell className="right-details" col={8}>
                                 <ul className="list-content" style={{listStyle: 'None'}}>
                                     <li>+1 646 589 9101</li>
                                     <li> hamza.mahmood1993@gmail.com</li>

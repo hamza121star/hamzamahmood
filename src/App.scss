@@ -142,7 +142,7 @@ h3{
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-flex;
-  background-size: 48px;;
+  background-size: 48px;
   -webkit-transition: background-image 0.4s ease-in-out !important;
   transition: background-image 0.4s ease-in-out !important;
   .fa-linkedin{
@@ -183,7 +183,30 @@ h3{
   font-size: 1.3em;
 }
 
+@media screen and (max-width: 1024px){
+  .mdl-layout__drawer-button {
+    margin: 4px;
+    color: rgb(255, 255, 255) !important;
+  }
+}
 @media only screen and (max-width: 430px){
+  .left-details{
+    display: block;
+    width: 14% !important;
+  }
+  .right-details{
+    width:40px !important;
+  }
+
+  .resume-left-side{
+    width: 100% !important;
+  }
+  .resume-right-side{
+    width:5;
+  }
+  .about-section{
+    padding: 30px !important;
+  }
   .banner-text h1 {
     font-size: 40px !important;
   }
@@ -195,7 +218,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center center;
     display: inline-block;
-    background-size: 38px;
+    background-size: 40px;
   }
   .to-pad-left{
     padding-left: 0px;
@@ -204,7 +227,8 @@ h3{
   }
   .about-left-sec{
     text-align: center;
-    font-size:1.5em !important;
+    font-size:1.7em !important;
+    font-weight: 600;
   }
   .about-right-sec{
     text-align: center;
@@ -479,9 +503,6 @@ $light-grey:lighten($grey, 15%);
 
 $background:#efefef;
 $field-color:#E8E9EA;
-
-
-
 
 
 .contact-body {
