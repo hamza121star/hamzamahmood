@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1500px)  { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 1200px)  { @content; }
+  }
+  @if $point == brother-bear {
+    @media (max-width: 850px)  { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 450px)  { @content; }
+  }
+}
+
+$profileBg:#fff;
+$skillsBg:#3d3e42;
+$profileColor:#9099a0;
+$skillsColor:#9099a0; 
+$linkColor:#EFC07B;
+$boldColor:#4a4e51;
+$time:0.6s;
+
+a{color:$linkColor; text-decoration:none;}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size:16px;
+  line-height:1.5em;
+}
+
+h2 {
+  font-size:2.5em;
+  line-height:1em;
+  padding-top:40px; 
+  @include breakpoint(mama-bear) {
+    padding-top:20px;
+  }
+  @include breakpoint(baby-bear) {
+    font-size:1.8em;  
+    padding-top:20px;
+  } 
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.header-color{
+  background: #F0C27B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid{
+  background: #F0C27B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: relative;
+  top:20;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding-bottom:80px !important;
+}
+.about-section{
+  padding: 80px !important;
+  background: white;  /* fallback for old browsers */
+  text-align: center;
+  position: relative;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100% !important;
+}
+
+.why-me{
+  background: #4B1248;  /* fallback for old browsers */
+  text-align: center !important;
+  padding: 0px !important;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  padding-bottom: 50px !important;
+
+  div h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.square-feel{
+  height:440px;
+  width: 380px;
+  padding: 35px;
+  margin:0px !important;
+  display: inline-flex;
+}
+
+.square-feel:hover{
+  transition: 0.35s;
+  opacity: 1 !important;
+}
+
+.btn-social-header {
+  border: 2px solid white;
+  height: 40px;
+  vertical-align: center;
+  width: 40px;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+#social:hover{
+  background-image: url("./images/white-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px auto;
+  -webkit-transition: background-image 0.4s ease-in-out !important;
+  transition: background-image 0.4s ease-in-out !important;
+  .fa-linkedin{
+    color: #0077B5;
+    transition: 0.4s;
+  }
+  .fa-github-square:hover {
+    transition: 0.4s;
+    color: #4078c0;
+  }
+  .fa-medium:hover {
+    transition: 0.4s;
+    color: #00ab6c;
+  }
+  .fa-behance-square:hover {
+    transition: 0.4s;
+    color: #1769ff;
+    
+  }
+}
+
+
+.progress-bar{
+  background-color: rgb(239, 192, 122);
+}
+
+// Writings page
+.post-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;  
+  font-weight: 400;
+}
+
+.aspect-ratio-placeholder{
+    position: relative;
+    padding:0px;
+    width: 100%;
+    margin: 0 auto;
+    .indv-disp{
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 30px;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+}
+.post-parent{
+  padding: 25px;
+}
+
+.blog-picture{
+  height:150px;
+  width: auto;
+}
+
+.post{
+}
+
+.post-card {
+  background: #eee;
+  padding: 2em 1em;
+  width: 100%;
+  height: 170px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 8px #888;
+  p {
+    display: flex;
+    align-items: center;
+  }
+  .blog-picture{
+    display: initial;
+    img{
+      float: right;
+      width: 220px;
+      height: auto;
+    }
+  }
+  .card-content{
+    .writing-card-title{
+      font-weight: 800;
+      letter-spacing: -.82px!important;
+      font-size: 1.5em;
+      color: black;
+      text-decoration: none !important;
+    }
+  }
+  
+}
+
+
+
+.avatar-img{
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text{
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 7.5px;
+}
+
+.banner-text h1{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p{
+  color: white;
+  font-size: 20px;
+  padding: 1.5em;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i{
+  color: white;
+  font-size: 5em;
+  padding: 10px;
+}
+
+.projects-grid{
+  display: flex;
+}
+
+/* Resume Page CSS */
+.profileImage{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #4B1248;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;    
+  text-align:center;
+  background-image: url(images/hamza-mahmood.png);
+  background-size: 175px;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+}
+
+.resume-name{
+  padding-top: 0.50em;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight:bold;
+  color: $boldColor;
+
+}
+.resume-right-col{
+  background: #2e182d;
+  color: white;
+  padding: 2.5em;
+  margin: 0px !important;
+}
+
+li {
+  margin-bottom:10px;
+}
+
+.clearfix::after, .clearfix::before {
+  content: " ";
+	display: table;
+}
+.clearfix::after{clear:both;}
+.bold {color:$boldColor; font-weight:400;}
+
+.contact-info{
+  @include breakpoint(mama-bear) {margin-top:70px; } 
+  @include breakpoint(baby-bear) { margin-top:50px; } 
+}
+.resume-page{
+  padding: 0px !important;
+  background: #2e182d;
+}
+.resume-left-side{
+  background: white;
+  margin:0px !important;
+}
+
+h3.experience-title{
+    color:$linkColor;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.5em;
+    margin-left: 12px;
+    margin-bottom:30px;
+    font-weight:900;
+}
+.list-titles {
+  float:left;
+  text-align:left;
+  font-weight:600;
+  width:40%;
+  color:$boldColor;
+}
+.list-content{
+  float:left;
+  text-align:left;
+  font-weight:300;
+}
+.dashed li{
+  text-indent: -10px;
+}
+
+.dashed li:before{
+  content: "-   ";
+  text-indent: -5px
+}
+
+
+// Contact Form CSS
+@mixin grid($column) {
+  width:(100% / 12) * $column;
+  margin:0 auto;
+}
+
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+  -webkit-transition: $attr $time $curve;
+  -moz-transition: $attr $time $curve;
+  -o-transition: $attr $time $curve;
+  -ms-transition: $attr $time $curve;
+  transition: $attr $time $curve;
+}
+
+//-- Lato --//
+@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
+@mixin lato-1-i {@include lato-1; font-style:italic;}
+
+@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
+@mixin lato-3-i {@include lato-3; font-style:italic;}
+
+@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
+@mixin lato-4-i {@include lato-4; font-style:italic;}
+
+@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
+@mixin lato-7-i {@include lato-7; font-style:italic;}
+
+@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
+@mixin lato-9-i {@include lato-9; font-style:italic;}
+
+
+// Colors
+$blue:#313A3D;
+$orange:#FD9638;
+$dark-orange:darken($orange, 20%);
+$grey:#B6B6B6;
+$light-grey:lighten($grey, 15%);
+
+$background:#efefef;
+$field-color:#E8E9EA;
+
+
+
+
+
+.contact-body {
+  background:$background;
+  font-size:62.5%;
+  @include lato-3;
+  color:$grey;
+
+section {
+    background:white;
+  margin:60px auto 120px;
+  border-top:15px solid $blue;
+  text-align:center;
+    padding:50px 0 110px;
+  width:80%;
+  max-width:1100px;
+  
+    h1 {
+      margin-bottom:40px;
+      font-size:4em;
+      text-transform:uppercase;
+      @include lato-1;
+    }
+  }
+}
+
+// Form
+form {
+    @include grid(7);
+
+    .field {
+        width:100%;
+        position:relative;
+        margin-bottom:15px;
+
+        $hover-label-width:18%;
+        $placeholder-bumper:1.5%;
+        $label-padding:18px;
+
+        // Label
+        label {
+            text-transform: uppercase;
+            position:absolute;
+            top:0;
+            left:0;
+            background:$blue;
+            width:100%;
+            padding:($label-padding + 0px) 0;
+            font-size: 1.45em;
+            letter-spacing: 0.075em;
+
+            @include ease(333ms);
+
+            // Checkmark
+            + span {
+                font-family: 'SSStandard';
+                opacity: 0;
+                color:white;
+                display: block;
+                position:absolute;
+                top: 12px;
+                left: 7%;
+                font-size: 2.5em;
+                text-shadow:1px 2px 0 $dark-orange;
+
+                @include ease(333ms);
+            }
+        }
+
+        // Fields
+        input[type="text"],
+        textarea {
+            border:none;
+            background:$field-color;
+            width:100% - $hover-label-width - $placeholder-bumper;
+            margin:0;
+            padding:$label-padding 0;
+            padding-left:$hover-label-width + $placeholder-bumper;
+            color:$blue;
+            font-size: 1.4em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+
+            &#msg {
+                height: 18px;
+                resize: none;
+                @include ease(333ms);
+            }
+
+            // Focus and JS Toggle Class
+            &:focus,
+            &.focused {
+                outline:none;
+
+                &#msg {
+                    padding-bottom:150px;
+                }
+
+                + label {
+                    width:$hover-label-width;
+                    background:$orange;
+                    color:$blue;
+                }
+            }
+
+            // JS Toggle Class
+            &.focused {
+                + label {
+                    color: $orange;
+                }
+            }
+        }
+
+        // Field Hover
+        &:hover {
+            label {
+                width:$hover-label-width;
+                background:$blue;
+                color:white;
+            }
+        }
+    }
+
+    // Submit Button
+    submit[type="submit"] {
+        background:$orange;
+        color:white;
+        -webkit-appearance: none;
+        border: none;
+        text-transform: uppercase;
+  position:relative;
+      padding: 13px 50px;
+      font-size: 1.4em;
+      letter-spacing: 0.1em;
+      @include lato-3;
+      @include ease;
+      
+        &:hover {
+            background:$blue;
+            color:$orange;
+        }
+
+        &:focus {
+            outline:none;
+            background:$dark-orange;
+        }
+    }
+}
