@@ -11,7 +11,7 @@ class About extends Component {
                         {this.props.heading}
                     </h3>
                     
-                    <p style={{font: 'Helvetica' ,textAlign: 'justify', fontWeight: 'normal', fontSize:'1.1em'}}>
+                    <p style={{font: 'Helvetica' ,textAlign: 'justify', fontWeight: 'normal'}}>
                         {this.props.description}
                     </p>
                 </div>

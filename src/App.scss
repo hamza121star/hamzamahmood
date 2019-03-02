@@ -97,7 +97,7 @@ h3{
 
 .square-feel{
   height:440px;
-  width: 380px;
+  //width: 380px;
   padding: 35px;
   margin:0px !important;
   display: inline-flex;
@@ -150,6 +150,10 @@ h3{
 }
 
 // Writings page
+.writings-heading{
+  text-align: center;
+  font-size: 3em;
+}
 .post-title{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;  

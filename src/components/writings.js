@@ -37,7 +37,7 @@ class Writing extends Component {
         return(
             <div>
                 <div className="container home">
-                    <h4> Writings </h4>
+                    <h4 className="writings-heading"> Writings </h4>
                     {postList}
                 </div>
             </div>
