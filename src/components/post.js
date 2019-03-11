@@ -16,7 +16,9 @@ class Post extends Component {
                 </div>
                 <div className="post">
                     <h2 className="post-title">{this.props.post.title}</h2>
-                    <p>{this.props.post.body}</p>
+                    <div>
+                        {this.props.post.body}
+                    </div>
                 </div>
             </div>
         ) : (

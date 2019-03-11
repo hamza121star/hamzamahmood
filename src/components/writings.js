@@ -13,20 +13,22 @@ class Writing extends Component {
                 return(
                     <div className="post-parent">
                         <Grid>
-                                <div className="post-card" key={post.id}>
-                                    <div className="card-content" style={{display:'inline-block'}}>
-                                        <Link className="writing-card-title" to={'/' + post.id}>
-                                            <span>{post.title}</span>
-                                        </Link>
-                                        <div>
-                                            <p>{post.body}</p>
-                                        </div>
+                                <Link style={{color:'black'}} to={'/' + post.id}>
+                                    <div className="post-card" key={post.id}>
+                                        
+                                        <Cell col={8} className="card-content" style={{display:'inline-block'}}>
+                                            <div className="writing-card-title">
+                                                <span>{post.title}</span>
+                                            </div>
+                                            <div style={{padding: '10px 0px'}}>
+                                                <p>{post.summary}</p>
+                                            </div>
+                                        </Cell>
+                                        <Cell col={4} className="blog-picture" >
+                                            <img src = {require(`../images/${post.disp}`)} alt="Write" />
+                                        </Cell>
                                     </div>
-                                    
-                                    <div className="blog-picture" >
-                                        <img src = {require(`../images/${post.disp}`)} alt="Write" />
-                                    </div>
-                                </div>
+                                </Link>
                         </Grid>
                     </div>
                 )

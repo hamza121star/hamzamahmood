@@ -261,12 +261,24 @@ h3{
   text-align: center;
   font-size: 3em;
 }
-.post-title{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;  
-  font-weight: 400;
+.post{
+  padding: 0 60px;
+  .post-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;  
+    font-weight: 400;
+  }
 }
 
+.blog-sub-image{
+  margin: 20px;
+  height:400px;
+  text-align: center;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 .aspect-ratio-placeholder{
     position: relative;
     padding:0px;
@@ -297,9 +309,9 @@ h3{
 }
 
 .post-card {
-  background: #eee;
+  background: #fff9f9;
   padding: 2em 1em;
-  width: 100%;
+  width: 1044px;
   height: 170px;
   border-radius: 3px;
   box-shadow: 1px 2px 8px #888;
@@ -413,7 +425,7 @@ li {
 
 .clearfix::after, .clearfix::before {
   content: " ";
-	display: table;
+  display: table;
 }
 .clearfix::after{clear:both;}
 .bold {color:$boldColor; font-weight:400;}
@@ -650,4 +662,51 @@ form {
             background:$dark-orange;
         }
     }
+}
+
+.philosophy-blog{
+  padding-bottom: 20px;
+  p,ol,ul{
+    font-family: 'Georgia, serif';
+    line-height: 1.65;
+    letter-spacing: 0.015em;
+    font-size:22px;
+  }
+  a{
+    color:black;
+  }
+  p{
+    font-weight: 400;
+    font-style: normal; 
+    text-align: justify
+  }
+  h4{
+    padding-top:10px;
+    font-size: 26px;
+    line-height: 1.22;
+    font-weight: 700;
+    letter-spacing: -.012em;
+  }
+  .code-pre{
+    background: rgba(0,0,0,.05);
+    padding: 20px;
+    white-space: pre-wrap;
+  }
+  .section-divider{
+      margin-top: 52px;
+      border:0;
+      text-align: center;
+      margin-bottom: 42px;
+      &::before{
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: .6em;
+        content: '...';
+        display: inline-block;
+        margin-left: .6em;
+        color: rgba(0,0,0,.68);
+        position: relative;
+        top: -30px;
+      }
+  }
 }
