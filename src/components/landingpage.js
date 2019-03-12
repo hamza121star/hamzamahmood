@@ -14,7 +14,7 @@ class Landing extends Component {
                         <div className="banner-text">
                             <h1>Software Engineer & Data Scientist</h1>
                             <hr />
-                            <p> Python | Java | Javascript | React | Data Viz | HTML/CSS</p>
+                            <p> Python | Java | Angular | React | Data Viz | HTML/CSS</p>
                             <div className="social-links">
                                 {/* Linkedin */}
                                 <a id="social" href="https://www.linkedin.com/in/hmahmood93/" rel="noopener noreferrer" target="_blank" >
