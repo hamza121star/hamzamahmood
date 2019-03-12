@@ -11,11 +11,10 @@ class Writing extends Component {
         const postList = posts.length ? (
             posts.map(post => {
                 return(
-                    <div className="post-parent">
+                    <div className="post-parent col-sm-12 col-md-12 col-lg-12 post-card">
                         <Grid>
                                 <Link style={{color:'black'}} to={'/' + post.id}>
-                                    <div className="post-card" key={post.id}>
-                                        
+                                    <div key={post.id}>
                                         <Cell col={8} className="card-content" style={{display:'inline-block'}}>
                                             <div className="writing-card-title">
                                                 <span>{post.title}</span>
