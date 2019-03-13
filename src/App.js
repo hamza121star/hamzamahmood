@@ -6,6 +6,10 @@ import './App.scss';
 
 
 class App extends Component {
+    hideToggleTitle() {
+        var selectorId = document.querySelector('.mdl-layout-title');
+        selectorId.MaterialLayout.toggleDrawer();
+    }
     hideToggle() {
         var selectorId = document.querySelector('.mdl-layout');
         selectorId.MaterialLayout.toggleDrawer();
@@ -14,7 +18,7 @@ class App extends Component {
         return (
         <div className="demo-big-content">
         <Layout>
-            <Header onClick={() => this.hideToggle()} className="header-color" title={<Link style={{textDecoration: 'none', color:'white'}}
+            <Header className="header-color" title={<Link style={{textDecoration: 'none', color:'white'}}
             to="/">Hamza Mahmood</Link>} scroll>
                 <Navigation>
                     <Link to="/resume">Resume</Link>
