@@ -75,20 +75,20 @@ class Resume extends Component {
                                 <p style={{fontWeight:'900', fontSize:'1.2em'}}>Full Stack Developer Specific Skills</p>
                                 <div style={{marginRight: '55px'}}>
                                     <Skill skillset = "React & Redux" percentage = {100}/>
-                                    <Skill skillset = "HTML5 & CSS3" percentage = {100}/>
+                                    <Skill skillset = "HTML5, CSS3 & Sass" percentage = {100}/>
                                     <Skill skillset = "Angular" percentage = {90}/>
                                     <Skill skillset = "Java" percentage = {80}/>
-                                    <Skill skillset = "Nodejs" percentage = {80}/>
+                                    <Skill skillset = "Python" percentage = {80}/>
                                 </div>
                             </Cell>
                             <Cell col={6}>
-                                <p style={{fontWeight:'900', fontSize:'1.2em'}}>Data Scientist Specific Skills</p>
+                                <p style={{fontWeight:'900', fontSize:'1.2em'}}>UX Designer Specific Skills</p>
                                 <div style={{marginRight: '25px'}}>
-                                    <Skill skillset = "Python (Libraries: Numpy, Scikit, Pandas, Plotly, Beautifulsoup)" percentage = {100}/>
-                                    <Skill skillset = "R" percentage = {95}/>
-                                    <Skill skillset = "Graphical Visualization using D3.js, Plotly, GGPlot" percentage = {90}/>
-                                    <Skill skillset = "SQL / Databases" percentage = {85}/>
-                                    <Skill skillset = "Tensorflow (Learning)" percentage = {80}/>
+                                    <Skill skillset = "High Fidelity Prototyping" percentage = {100}/>
+                                    <Skill skillset = "Wireframing and Mockup generation" percentage = {95}/>
+                                    <Skill skillset = "Usability Study and Data Analysis" percentage = {90}/>
+                                    <Skill skillset = "UI Conceptualization" percentage = {90}/>
+                                    <Skill skillset = "Motion Design" percentage = {80}/>
                                 </div>
                             </Cell>
                         </Grid>
