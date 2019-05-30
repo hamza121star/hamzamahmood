@@ -42,7 +42,7 @@ class Landing extends Component {
                     <Cell col={6}>
                         <div className="to-pad-right">
                             <h4 className="about-left-sec">
-                                Hi. I am Hamza, a software developer based in New York City. Currently an MS candidate for Technological Systems Management in Stony Brook University.
+                                Hi. I am Hamza, a Front End Developer and UX Designer based in New York City. I am a recent graduate from Stony Brook University with a Masters degree in Technological Systems Management with a focus in product design.
                             </h4>
                         </div>
                     </Cell>

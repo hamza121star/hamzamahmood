@@ -98,7 +98,7 @@ class Resume extends Component {
                             startYear = "Apr 2018"
                             endYear = "Present"
                             company = "Surkhi"
-                            companyRole = "Founder & Lead Data Scientist"
+                            companyRole = "Front End Developer & UX Designer"
                             jobDesc = {surkhi}
                         />
 
