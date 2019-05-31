@@ -12,9 +12,9 @@ class Landing extends Component {
                             src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
                         />
                         <div className="banner-text">
-                            <h1>Software Engineer & Data Scientist</h1>
+                            <h1>Software Engineer & UX Designer</h1>
                             <hr />
-                            <p> Python | Java | Angular | React | Data Viz | HTML/CSS</p>
+                            <p> Java | React | Javascript | HTML/CSS | Product Prototyping</p>
                             <div className="social-links">
                                 {/* Linkedin */}
                                 <a id="social" href="https://www.linkedin.com/in/hmahmood93/" rel="noopener noreferrer" target="_blank" >
@@ -54,8 +54,8 @@ class Landing extends Component {
                             from start to launch. 
                             <br />
                             <br />
-                            Recently done several data-focused projects that include exploratory data analysis, designing visualizations 
-                            has given me the ability to provide consulting and analytics backed advice on business and enterprise solutions. 
+                            Recently done several UX-focused projects that include exploratory data analysis, designing UI concept, design language creation
+                            has given me the ability to provide product based consultancy and analytics backed advice on creating awesome product and design solutions. 
                             </p>
                         </div>
                     </Cell>
