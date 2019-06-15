@@ -21,6 +21,9 @@ class AmazonAppRedesign extends Component {
             width: '85%',
             height: 'auto'
         };  
+        const spacing = {
+            margin: '100px'
+        }
         return (
             <div className="amazon-blog">
                 <p>
@@ -306,8 +309,7 @@ class AmazonAppRedesign extends Component {
 
                 <hr className="section-divider"></hr>
 
-                <p>I am working on more product design projects and creating magic. If you liked this read I have written another 
-                    article on Typography:
+                <p style={spacing}>
                 </p>
         </div>
         )
