@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import About from './about-me';
 import Portfolio from './portfolio';
 import displayPicture from '../images/hamza-mahmood-full.png';
+import SurkhiPage from '../images/Surkhi-website-page.png';
 
 class Landing extends Component {
     render() {
@@ -20,10 +21,10 @@ class Landing extends Component {
                             <div className="banner-text">
                                 <h2>Hello, I am Hamza.</h2>
                                 <p>
-                                    A UX Designer and Product Developer from Pakistan, currently based in New York City. 
+                                    A Product Designer and UX Researcher from Pakistan, currently based in New York City. 
                                 </p>    
                                 <p>
-                                    I am working on designing the next generation fact-checking platform for <Link to="https://www.facebook.com/SURKHI.pk/">Surkhi</Link> and
+                                    I am currently working on designing the next generation fact-checking platform for <Link to="https://www.facebook.com/SURKHI.pk/">Surkhi</Link> and
                                     leading a wonderful team of engineers and designers.
                                 </p>
                                 <div className="mt-5">
@@ -42,24 +43,23 @@ class Landing extends Component {
                     </Grid>
                     <Grid className="about-section">
                         <Cell col={6}>
-                            <div className="to-pad-right">
-                                <h4 className="about-left-sec">
-                                    
-                                </h4>
-                            </div>
+                            <section className="project-left-section">
+                                <div className="project-image">
+                                    <img src={SurkhiPage} />
+                                </div>
+                            </section>
                         </Cell>
                         <Cell col={6}>
-                            <div  className="to-pad-left">
+                            <section  className="project-right-section">
+                                <h2>Surkhi.pk </h2>
+                                <h3>UX Design Lead (April 2018 -  Present)</h3>
                                 <p className="about-right-sec">
-                                I am passionate about solving problems, building solutions that positively impact the lives of those around
-                                me. I have done extensive work in UI development and with in depth understanding of UX, I have the ability to take applications
-                                from start to launch. 
-                                <br />
-                                <br />
-                                Recently done several UX-focused projects that include exploratory data analysis, designing UI concept, design language creation
-                                has given me the ability to provide product based consultancy and analytics backed advice on creating awesome product and design solutions. 
-                                </p>
-                            </div>
+                                Helped found Surkhi which started out as a Instagram page that flaired false news within the subcontinent</p>
+                                <p>-  an organizational model for the design org paired with solid vision, team culture, hiring strategy and obsession to quality. I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
+                                <p>- Designed the visual identity and framework to help align creative and marketing with the brand </p>
+                                <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
+                                <p>- Created all infographics, visualizations and marketing content for the company's <Link to="https://www.instagram.com/surkhi.pk/">Instagram</Link> page</p>
+                            </section>
                         </Cell>
                     </Grid>
                 </section>
