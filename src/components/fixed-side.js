@@ -22,10 +22,10 @@ class FixedSide extends Component{
                     </ul>
                 </nav>
                 <ul className="">
-                    <li><Link to="https://www.behance.net/hamzamahmood2b65" target="_blank"> Design Work</Link></li>    
-                    <li><Link to="https://github.com/hamza121star" target="_blank"> Coding Stuff</Link></li>
-                    <li><Link to="https://www.instagram.com/storiesofatechie/" target="_blank">Photography </Link></li>
-                    <li><Link to="https://medium.com/@hamzamahmood" target="_blank"> Writing </Link></li>
+                    <li><a href="https://www.behance.net/hamzamahmood2b65" target="_blank" rel="noopener noreferrer"> Design Work</a></li>    
+                    <li><a href="https://github.com/hamza121star" target="_blank" rel="noopener noreferrer"> Coding Stuff</a></li>
+                    <li><a href="https://www.instagram.com/storiesofatechie/" target="_blank" rel="noopener noreferrer">Photography </a></li>
+                    <li><a href="https://medium.com/@hamzamahmood" target="_blank" rel="noopener noreferrer"> Writing </a></li>
                 </ul>
                 <footer>
                     <div>

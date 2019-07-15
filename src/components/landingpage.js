@@ -24,11 +24,11 @@ class Landing extends Component {
                                     A Product Designer and UX Researcher from Pakistan, currently based in New York City. 
                                 </p>    
                                 <p>
-                                    I am currently working on designing the next generation fact-checking platform for <Link to="https://www.facebook.com/SURKHI.pk/">Surkhi</Link> and
+                                    I am currently working on designing the next generation fact-checking platform for <a href="https://www.facebook.com/SURKHI.pk/" target="_blank" rel="noopener noreferrer">Surkhi</a> and
                                     leading a wonderful team of engineers and designers.
                                 </p>
                                 <div className="mt-5">
-                                    <div className="contactButton btn"><Link to="https://www.linkedin.com/in/hmahmood93/">Connect with me on Linkedin</Link></div>
+                                    <div className="contactButton btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Connect with me on Linkedin</a></div>
                                 </div>
                             </div>
                         </Cell>
@@ -58,7 +58,7 @@ class Landing extends Component {
                                 <p>-  an organizational model for the design org paired with solid vision, team culture, hiring strategy and obsession to quality. I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
                                 <p>- Designed the visual identity and framework to help align creative and marketing with the brand </p>
                                 <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
-                                <p>- Created all infographics, visualizations and marketing content for the company's <Link to="https://www.instagram.com/surkhi.pk/">Instagram</Link> page</p>
+                                <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page</p>
                             </section>
                         </Cell>
                     </Grid>
