@@ -29,8 +29,8 @@ $break-small: 380px;
 a{color:$linkColor; text-decoration:none;}
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size:16px;
+  font-family: 'Roboto', sans-serif !important;
+  font-size:14px;
   line-height:1.5em;
 }
 
@@ -111,11 +111,13 @@ h3{
   background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .landing-grid{
-  background: #F0C27B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #F0C27B;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: relative;
+  float:right;
+  margin:20px;
   top:20;
   left:0;
   width: 100%;
@@ -411,8 +413,17 @@ h3{
 }
 
 .banner-text{
-  background-color: black;
+  h2{
+    color:black;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  p{
+    color:#000;
+    font-size: 18px;
+  }
   opacity: 0.8;
+  text-align: left;
   width: 75%;
   margin: auto;
   border-radius: 7.5px;
@@ -428,12 +439,6 @@ h3{
   border-top: 5px dotted white;
   width: 50%;
   margin: auto;
-}
-
-.banner-text p{
-  color: white;
-  font-size: 20px;
-  padding: 1.5em;
 }
 
 .social-links{
@@ -462,7 +467,6 @@ h3{
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;    
   text-align:center;
-  background-image: url(images/hamza-mahmood.png);
   background-size: 175px;
   background-position:50% 50%;
   background-repeat:no-repeat;
@@ -772,5 +776,88 @@ form {
         position: relative;
         top: -30px;
       }
+  }
+}
+
+
+
+
+/// SIDEBAR CSS
+.sidebar {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #FFF;
+  text-align: center;
+  background: -webkit-linear-gradient(to bottom, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Saf
+  /* fallback for old browsers */
+}
+
+.sidebar .brand {
+  display: inline-block;
+  margin: 25px 0 10px;
+  padding: 25px;
+  text-align: center;
+}
+.sidebar ul{
+  list-style: none;
+  li{
+    color:white;
+    text-align: left;
+  }
+  li a{
+    color:white;
+  }
+}
+
+.sidebar-name{
+  font-size:16px;
+}
+.sidebar-label{
+  font-size:14px;
+  color:rgb(230, 230, 230);
+  line-height: 2rem;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 10px 25px;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 100%;
+  display: block;
+  color:white;
+  margin: 5% auto;
+}
+
+.display-picture{
+  img {
+    width: 80%;
+  }
+}
+
+.contactButton{
+  padding: 0.85rem;
+  background: #78154d;
+  border-color: #78154d;
+  &:hover{
+    background:#6a0a40;
+    border-color:#6a0a40;
+  }
+  &:active, &:focus{
+    background: #78154d;
+  }
+  a{
+    color:white;
+    text-decoration: none;
   }
 }

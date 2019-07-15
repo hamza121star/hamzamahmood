@@ -1,64 +1,70 @@
 import React, {Component} from 'react';
+import FixedSide from './fixed-side';
 import {Grid, Cell} from 'react-mdl';
+import {Link} from 'react-router-dom';
 import About from './about-me';
+import Portfolio from './portfolio';
+import displayPicture from '../images/hamza-mahmood-full.png';
 
 class Landing extends Component {
     render() {
         return(
-            <div style={{width: '100%', margin: 'auto'}}>
-                <Grid className="landing-grid">
-                    <Cell col={12}>
-                        <img 
-                            src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
-                        />
-                        <div className="banner-text">
-                            <h1>Software Engineer & UX Designer</h1>
-                            <hr />
-                            <p> Java | React | Javascript | HTML/CSS | Product Prototyping</p>
-                            <div className="social-links">
-                                {/* Linkedin */}
-                                <a id="social" href="https://www.linkedin.com/in/hmahmood93/" rel="noopener noreferrer" target="_blank" >
-                                    <i className="fab fa-linkedin" aria-hidden="true" />
-                                </a>
-                                {/* Github */}
-                                <a id="social" href="https://github.com/hamza121star" rel="noopener noreferrer" target="_blank" >
-                                <i className="fab fa-github-square"  aria-hidden="true" ></i>
-                                </a>
-
-                                {/* Medium */}
-                                <a id="social" href="https://medium.com/@hamzamahmood" rel="noopener noreferrer" target="_blank" >
-                                    <i className="fab fa-medium" aria-hidden="true"></i>
-                                </a>
-                                
-                                {/* Behance */}
-                                <a id="social" href="https://www.behance.net/hamzamahmo2b65" rel="noopener noreferrer" target="_blank" >
-                                <i className="fab fa-behance-square" aria-hidden="true"></i>
-                                </a>
+            <div style={{width: '75%', margin: 'auto', float:'right'}}>
+                <FixedSide />
+                <section>
+                    <Grid className="landing-grid">
+                        <Cell col={6}>
+                            {/* <img 
+                                src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
+                            /> */}
+                            <div className="banner-text">
+                                <h2>Hello, I am Hamza.</h2>
+                                <p>
+                                    A UX Designer and Product Developer from Pakistan, currently based in New York City. 
+                                </p>    
+                                <p>
+                                    I am working on designing the next generation fact-checking platform for <Link to="https://www.facebook.com/SURKHI.pk/">Surkhi</Link> and
+                                    leading a wonderful team of engineers and designers.
+                                </p>
+                                <div className="mt-5">
+                                    <div className="contactButton btn"><Link to="https://www.linkedin.com/in/hmahmood93/">Connect with me on Linkedin</Link></div>
+                                </div>
                             </div>
-                        </div>
-                    </Cell>
-                </Grid>
-                <Grid className="about-section">
-                    <Cell col={6}>
-                        <div className="to-pad-right">
-                            <h4 className="about-left-sec">
-                                Hi. I am Hamza, a Front End Developer and UX Designer based in New York City. I am a recent graduate from Stony Brook University with a Masters degree in Technological Systems Management with a focus in product design.
-                            </h4>
-                        </div>
-                    </Cell>
-                    <Cell col={6}>
-                        <div  className="to-pad-left">
-                            <p className="about-right-sec">
-                            I am passionate about solving problems, building solutions that positively impact the lives of those around
-                            me. I have done extensive work in UI development and with in depth understanding of UX, I have the ability to take applications
-                            from start to launch. 
-                            <br />
-                            <br />
-                            Recently done several UX-focused projects that include exploratory data analysis, designing UI concept, design language creation
-                            has given me the ability to provide product based consultancy and analytics backed advice on creating awesome product and design solutions. 
-                            </p>
-                        </div>
-                    </Cell>
+                        </Cell>
+                        <Cell col={6}>
+                            {/* <img 
+                                src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
+                            /> */}
+                            <div className="display-picture">
+                                <img src={displayPicture} />
+                            </div>
+                        </Cell>
+                    </Grid>
+                    <Grid className="about-section">
+                        <Cell col={6}>
+                            <div className="to-pad-right">
+                                <h4 className="about-left-sec">
+                                    
+                                </h4>
+                            </div>
+                        </Cell>
+                        <Cell col={6}>
+                            <div  className="to-pad-left">
+                                <p className="about-right-sec">
+                                I am passionate about solving problems, building solutions that positively impact the lives of those around
+                                me. I have done extensive work in UI development and with in depth understanding of UX, I have the ability to take applications
+                                from start to launch. 
+                                <br />
+                                <br />
+                                Recently done several UX-focused projects that include exploratory data analysis, designing UI concept, design language creation
+                                has given me the ability to provide product based consultancy and analytics backed advice on creating awesome product and design solutions. 
+                                </p>
+                            </div>
+                        </Cell>
+                    </Grid>
+                </section>
+                <Grid>
+                    <Portfolio />
                 </Grid>
                 <Grid className="why-me">
                     <div style={{textAlign: 'center', padding:'5px'}}>
