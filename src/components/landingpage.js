@@ -102,7 +102,8 @@ const LandingPage = () => {
                                 <h2>Surkhi.pk </h2>
                                 <h3>Product Designer Lead (April 2018 -  Present)</h3>
                                 <p>  Co-founded Surkhi which started out with an Instagram page that flaired false news within the 
-                                    subcontinent</p>
+                                    subcontinent. Currently leading a talented young team of designers and engineers in partnership
+                                    with policy researchers and institutes to battle fake news using technology.  </p>
                                 <p>- Incorporated Design Thinking practices within the product development team to showcase a 'move fast, iterate rapidly'
                                     strategy with a clear goal in mind and prioritizing quality. </p>
                                 <p>- I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
@@ -124,10 +125,12 @@ const LandingPage = () => {
                                 <h2>UX Case Study: Amazon Mobile App</h2>
                                 <h3>Usability Researcher (Jan 2019 - Apr 2019)</h3>
                                 <p>- Designed a concept of the Amazon mobile app that follows the company's timeless branding, includes structured placement 
-                                    of information, prioritized 'scan item' feature, side-to-side product comparison. </p>
-                                <p>- Carried out usability study to understand the pain points of users by conducting interviews, storyboarding and sharing online surveys to gather data.</p>
-                                <p>- Designed the high fidelity prototype that aligns with the modern user.</p>
-                                <p>-  </p>
+                                    of information, optimized checkout process, prioritized 'scan item' feature and dark mode. </p>
+                                <p>- Carried out usability study to understand pain points and goals of the users through conducting interviews, 
+                                    storyboarded scenarios, and online surveys.</p>
+                                <p>- Designed an accessible and functional high fidelity prototype that aligned with the persona based on the 
+                                    user research data.</p>
+                                <p>- Validated results by testing the new design with volunteers who showed acceptibility of the prototype </p>
                                 <div className="mt-5">
                                     <div className="contactButton button-pad btn"><a href="https://uxdesign.cc/i-felt-the-amazon-app-was-outdated-so-i-redesigned-it-using-design-thinking-a-ux-case-study-549c5880d9be" target="_blank" rel="noopener noreferrer">Learn More</a></div>
                                 </div>
