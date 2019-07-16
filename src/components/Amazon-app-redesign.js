@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import Cartoon from '../images/cartoon.jpg';
-import UserPersona from '../images/persona@2x.jpg';
-import AmazonLogo from '../images/logo.png';
-import AmazonColors from '../images/color.png';
-import Process from '../images/process.png';
-import ButtonCompare from '../images/button-compare.png';
-import Notes from '../images/goals-pains.png';
-import DarkMode from '../images/dark-mode.png';
-import CheckOut from '../images/checkout.png';
-import ProductPage from '../images/Product-Page.png';
-import ScanFeature from '../images/scan-feature.png';
+import Cartoon from '../assets/images/cartoon.jpg';
+import UserPersona from '../assets/images/persona@2x.jpg';
+import AmazonLogo from '../assets/images/logo.png';
+import AmazonColors from '../assets/images/color.png';
+import Process from '../assets/images/process.png';
+import ButtonCompare from '../assets/images/button-compare.png';
+import Notes from '../assets/images/goals-pains.png';
+import DarkMode from '../assets/images/dark-mode.png';
+import CheckOut from '../assets/images/checkout.png';
+import ProductPage from '../assets/images/Product-Page.png';
+import ScanFeature from '../assets/images/scan-feature.png';
 
 class AmazonAppRedesign extends Component {    
     render(){  

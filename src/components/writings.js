@@ -24,7 +24,7 @@ class Writing extends Component {
                                             </div>
                                         </Cell>
                                         <Cell col={4} className="blog-picture" >
-                                            <img src = {require(`../images/${post.disp}`)} alt="Write" />
+                                            <img src = {require(`../assets/images/${post.disp}`)} alt="Write" />
                                         </Cell>
                                     </div>
                                 </Link>

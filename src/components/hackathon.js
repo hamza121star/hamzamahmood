@@ -31,7 +31,7 @@ class Hackathon extends Component {
                 really in favor of me traveling there and for good reason, but that did not stop me.
                 </p>
                 <div className="blog-sub-image">
-                    <img src={require('../images/hackathon-arena.png')}/>
+                    <img src={require('../assets/images/hackathon-arena.png')}/>
                 </div>
                 <p>
                 The event was set in a very nice part of town as a matter-of-fact. We were to spend 3 days in the Chaifetz Arena, 

@@ -11,7 +11,7 @@ class Post extends Component {
             <div>
                 <div className="aspect-ratio-placeholder">
                     <div className="indv-disp">
-                        <img src={require(`../images/${this.props.post.disp}`)}/>
+                        <img src={require(`../assets/images/${this.props.post.disp}`)}/>
                     </div>
                 </div>
                 <div className="post">

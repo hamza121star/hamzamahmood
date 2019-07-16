@@ -1,23 +1,39 @@
 import React, {Component} from 'react';
-import FixedSide from './fixed-side';
 import {Grid, Cell} from 'react-mdl';
-import {Link} from 'react-router-dom';
 import About from './about-me';
 import Portfolio from './portfolio';
-import displayPicture from '../images/hamza-mahmood-full.png';
-import SurkhiPage from '../images/Surkhi-website-page.png';
+import FormModal from './form';
+import displayPicture from '../assets/images/hamza-mahmood-full.png';
+import SurkhiPage from '../assets/images/Surkhi-website-page.png';
+import AmazonCaseStudy from '../assets/images/Amazon-Case-Study.png';
+import Resume from '../assets/documents/Product_Designer_Resume_Hamza_Mahmood.pdf'
 
-class Landing extends Component {
+class LandingPage extends Component {
+    state = {
+        showModal: false
+    }
+
+    showModalHandler = (event) => {
+        this.setState({showModal: true})
+    }
+    hideModalHandler = (event) => {
+        this.setState({showModal: false})
+    }
+
     render() {
         return(
-            <div style={{width: '75%', margin: 'auto', float:'right'}}>
-                <FixedSide />
-                <section>
+            <div>
+                <section className="main-content-side">
                     <Grid className="landing-grid">
-                        <Cell col={6}>
-                            {/* <img 
-                                src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
-                            /> */}
+                        <div className="contact-section col-lg-12">
+                            <FormModal show={this.state.showModal} hideModalHandler={this.hideModalHandler} />
+                            <div className="my-4 float-right">
+                                <div className="contactButton button-pad mr-3 btn"><a href={Resume} target="_blank" rel="noopener noreferrer">My Resume</a></div>
+                                <div className="contactButton button-pad btn" onClick={this.showModalHandler}>Contact Me</div>
+                                
+                            </div>
+                        </div>
+                        <div className="first col-md-6 col-lg-6">
                             <div className="banner-text">
                                 <h2>Hello, I am Hamza.</h2>
                                 <p>
@@ -31,36 +47,59 @@ class Landing extends Component {
                                     <div className="contactButton btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Connect with me on Linkedin</a></div>
                                 </div>
                             </div>
-                        </Cell>
-                        <Cell col={6}>
-                            {/* <img 
-                                src = {require('../images/hamza-mahmood.png')} alt="avatar" className="avatar-img"
-                            /> */}
-                            <div className="display-picture">
+                        </div>
+                        <div className="second display-picture col-md-6 col-lg-6">                        
                                 <img src={displayPicture} />
-                            </div>
-                        </Cell>
+                        </div>
                     </Grid>
                     <Grid className="about-section">
-                        <Cell col={6}>
+                        <div className="col-12 col-md-6">
                             <section className="project-left-section">
                                 <div className="project-image">
                                     <img src={SurkhiPage} />
                                 </div>
                             </section>
-                        </Cell>
-                        <Cell col={6}>
+                        </div>
+                        <div className="col-12 col-md-6">
                             <section  className="project-right-section">
                                 <h2>Surkhi.pk </h2>
-                                <h3>UX Design Lead (April 2018 -  Present)</h3>
+                                <h3>Product Designer Lead (April 2018 -  Present)</h3>
                                 <p className="about-right-sec">
                                 Helped found Surkhi which started out as a Instagram page that flaired false news within the subcontinent</p>
-                                <p>-  an organizational model for the design org paired with solid vision, team culture, hiring strategy and obsession to quality. I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
+                                <p>- Incorporated Design Thinking practices within the product development team to showcase a 'move fast, iterate rapidly'
+                                    strategy with a clear goal in mind and prioritizing quality. </p>
+                                <p>- I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
                                 <p>- Designed the visual identity and framework to help align creative and marketing with the brand </p>
                                 <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
                                 <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page</p>
+                                <div className="mt-5">
+                                    <div className="contactButton button-pad btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+                                </div>
                             </section>
-                        </Cell>
+                        </div>
+                    </Grid>
+                    <Grid className="about-section">
+                        <div className="col-12 col-md-6">
+                            <section  className="project-right-section">
+                                <h2>UX Case Study: Amazon Mobile App</h2>
+                                <h3>Usability Researcher (Jan 2019 - Apr 2019)</h3>
+                                <p>- Designed a concept of the Amazon mobile app that follows the company's timeless branding, includes structured placement 
+                                    of information, prioritized 'scan item' feature, side-to-side product comparison. </p>
+                                <p>- Carried out usability study to understand the pain points of users by conducting interviews, storyboarding and sharing online surveys to gather data.</p>
+                                <p>- Designed the high fidelity prototype that aligns with the modern user.</p>
+                                <p>-  </p>
+                                <div className="mt-5">
+                                    <div className="contactButton button-pad btn"><a href="https://uxdesign.cc/i-felt-the-amazon-app-was-outdated-so-i-redesigned-it-using-design-thinking-a-ux-case-study-549c5880d9be" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <section className="project-left-section">
+                                <div className="project-image">
+                                    <img src={AmazonCaseStudy} />
+                                </div>
+                            </section>
+                        </div>
                     </Grid>
                 </section>
                 <Grid>
@@ -91,9 +130,9 @@ class Landing extends Component {
                         />
                     </div>
                 </Grid>
-            </div>
+            </div>       
         )
     }
 }
 
-export default Landing;
+export default LandingPage;

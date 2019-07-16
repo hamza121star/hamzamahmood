@@ -98,32 +98,21 @@ h3{
     font-size: 13px;
     z-index: 20;
 }
-.drawer{
-  text-align: center;
-  span{
-    background: #4B1248;
-    padding-left: 0px !important;
-  }
-}
+
 .header-color{
   background: #F0C27B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .landing-grid{
-  // background: #F0C27B;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  display: flex;
+  flex-flow: column;
   position: relative;
-  float:right;
-  margin:20px;
-  top:20;
-  left:0;
-  width: 100%;
-  height: 100%;
-  
+  margin:120px;
+  width: 100%;  
 }
+
 .about-section{
   padding: 80px !important;
   background: white;  /* fallback for old browsers */
@@ -136,7 +125,6 @@ h3{
 }
 
 .why-me{
-  background: #4B1248;  /* fallback for old browsers */
   text-align: center !important;
   padding: 0px !important;
   width: 100%;
@@ -183,7 +171,7 @@ h3{
 }
 
 #social:hover{
-  background-image: url("./images/white-bg.png");
+  background-image: url("./assets/images/white-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-flex;
@@ -244,67 +232,6 @@ h3{
     margin: 4px;
     color: rgb(255, 255, 255) !important;
   }
-}
-@media only screen and (max-width: 430px){
-  .left-details{
-    display: block;
-    width: 14% !important;
-  }
-  .right-details{
-    width:40px !important;
-  }
-
-  .resume-left-side{
-    width: 100% !important;
-  }
-  .resume-right-side{
-    width:5;
-  }
-  .about-section{
-    padding: 30px !important;
-  }
-  .banner-text h1 {
-    font-size: 40px !important;
-  }
-  .banner-text{
-    width: 80% !important;
-  }
-  #social:hover{
-    background-image: url("./images/white-bg.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: inline-block;
-    background-size: 40px;
-  }
-  .to-pad-left{
-    padding-left: 0px;
-  }.to-pad-right{
-    padding-right: 0px;
-  }
-  .about-left-sec{
-    text-align: center;
-    font-size:1.7em !important;
-    font-weight: 600;
-  }
-  .about-right-sec{
-    text-align: center;
-    font-weight: 200;
-    font-size: 1.3em;
-  }
-  .social-links{
-    display: inline-flex !important;
-    width: 100% !important;
-    padding: 0px 22px !important;
-    margin-bottom: 20px !important;
-    i {
-      font-size: 3.5em !important;
-      padding: 0px 0px 0px 0px !important;
-    }
-  }
-  .square-feel{
-    height: 550px;
-  }
-  
 }
 
 
@@ -390,7 +317,7 @@ h3{
   }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 577px){
   .post-card {
     p {
       text-align: center;
@@ -424,6 +351,11 @@ h3{
 }
 
 .banner-text{
+  opacity: 0.8;
+  text-align: left;
+  width: 75%;
+  margin: auto;
+  border-radius: 7.5px;
   h2{
     color:black;
     font-size: 4rem;
@@ -433,11 +365,7 @@ h3{
     color:#000;
     font-size: 18px;
   }
-  opacity: 0.8;
-  text-align: left;
-  width: 75%;
-  margin: auto;
-  border-radius: 7.5px;
+  
 }
 
 .banner-text h1{
@@ -509,10 +437,6 @@ li {
 .clearfix::after{clear:both;}
 .bold {color:$boldColor; font-weight:400;}
 
-.contact-info{
-  @include breakpoint(mama-bear) {margin-top:70px; } 
-  @include breakpoint(baby-bear) { margin-top:50px; } 
-}
 .resume-page{
   padding: 0px !important;
   background: #2e182d;
@@ -596,153 +520,6 @@ $background:#efefef;
 $field-color:#E8E9EA;
 
 
-.contact-body {
-  background:$background;
-  font-size:62.5%;
-  @include lato-3;
-  color:$grey;
-
-section {
-    background:white;
-  margin:60px auto 120px;
-  border-top:15px solid $blue;
-  text-align:center;
-    padding:50px 0 110px;
-  width:80%;
-  max-width:1100px;
-  
-    h1 {
-      margin-bottom:40px;
-      font-size:4em;
-      text-transform:uppercase;
-      @include lato-1;
-    }
-  }
-}
-
-// Form
-form {
-    @include grid(7);
-
-    .field {
-        width:100%;
-        position:relative;
-        margin-bottom:15px;
-
-        $hover-label-width:18%;
-        $placeholder-bumper:1.5%;
-        $label-padding:18px;
-
-        // Label
-        label {
-            text-transform: uppercase;
-            position:absolute;
-            top:0;
-            left:0;
-            background:$blue;
-            width:100%;
-            padding:($label-padding + 0px) 0;
-            font-size: 1.45em;
-            letter-spacing: 0.075em;
-
-            @include ease(333ms);
-
-            // Checkmark
-            + span {
-                font-family: 'SSStandard';
-                opacity: 0;
-                color:white;
-                display: block;
-                position:absolute;
-                top: 12px;
-                left: 7%;
-                font-size: 2.5em;
-                text-shadow:1px 2px 0 $dark-orange;
-
-                @include ease(333ms);
-            }
-        }
-
-        // Fields
-        input[type="text"],
-        textarea {
-            border:none;
-            background:$field-color;
-            width:100% - $hover-label-width - $placeholder-bumper;
-            margin:0;
-            padding:$label-padding 0;
-            padding-left:$hover-label-width + $placeholder-bumper;
-            color:$blue;
-            font-size: 1.4em;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-
-            &#msg {
-                height: 18px;
-                resize: none;
-                @include ease(333ms);
-            }
-
-            // Focus and JS Toggle Class
-            &:focus,
-            &.focused {
-                outline:none;
-
-                &#msg {
-                    padding-bottom:150px;
-                }
-
-                + label {
-                    width:$hover-label-width;
-                    background:$orange;
-                    color:$blue;
-                }
-            }
-
-            // JS Toggle Class
-            &.focused {
-                + label {
-                    color: $orange;
-                }
-            }
-        }
-
-        // Field Hover
-        &:hover {
-            label {
-                width:$hover-label-width;
-                background:$blue;
-                color:white;
-            }
-        }
-    }
-
-    // Submit Button
-    submit[type="submit"] {
-        background:$orange;
-        color:white;
-        -webkit-appearance: none;
-        border: none;
-        text-transform: uppercase;
-  position:relative;
-      padding: 13px 50px;
-      font-size: 1.4em;
-      letter-spacing: 0.1em;
-      @include lato-3;
-      @include ease;
-      
-        &:hover {
-            background:$blue;
-            color:$orange;
-        }
-
-        &:focus {
-            outline:none;
-            background:$dark-orange;
-        }
-    }
-}
-
 .philosophy-blog, .amazon-blog{
   padding-bottom: 20px;
   p,ol,ul{
@@ -794,43 +571,17 @@ form {
 
 
 /// SIDEBAR CSS
-.sidebar {
-  font-family: "Montserrat", Arial, sans-serif;
-  color: #FFF;
-  text-align: center;
-  background: -webkit-linear-gradient(to bottom, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Saf
-  /* fallback for old browsers */
-}
-
-.sidebar .brand {
-  display: inline-block;
-  margin: 25px 0 10px;
-  padding: 25px;
-  text-align: center;
-}
-.sidebar ul{
-  list-style: none;
-  li{
-    color:white;
-    text-align: left;
+@media screen and (min-width: 451px){
+  .main-content-side{
+    width:75%;
+    float:right;
   }
-  li a{
-    color:white;
-  }
-}
-
-.sidebar-name{
-  font-size:16px;
-}
-.sidebar-label{
-  font-size:14px;
-  color:rgb(230, 230, 230);
-  line-height: 2rem;
-  text-align: left;
-}
-@media (min-width: 1024px) {
   .sidebar {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #FFF;
+    text-align: center;
+    background: -webkit-linear-gradient(to bottom, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4B1248, #F0C27B); 
     height: 100%;
     width: 25%;
     position: fixed;
@@ -839,6 +590,124 @@ form {
     left: 0;
     overflow-x: hidden;
     padding: 10px 25px;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Saf
+    /* fallback for old browsers */
+  }
+
+  .sidebar .brand {
+    display: inline-block;
+    margin: 25px 0 10px;
+    padding: 25px;
+    text-align: center;
+  }
+  .sidebar ul{
+    list-style: none;
+    li{
+      color:white;
+      text-align: left;
+    }
+    li a{
+      color:white;
+    }
+  }
+
+  .sidebar-name{
+    font-size:16px;
+  }
+  .sidebar-label{
+    font-size:14px;
+    color:rgb(230, 230, 230);
+    line-height: 2rem;
+    text-align: left;
+  }
+  .display-picture{
+    img {
+      width: 100%;
+      padding: 0 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .main-content-side {
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-content-side{
+    width:100%;
+  }
+  .sidebar {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    background: -webkit-linear-gradient(to bottom, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4B1248, #F0C27B); 
+    footer{
+      text-align: center;
+      div > p {
+        color: white;
+      }
+    }
+  }
+  .sidebar .brand {
+    margin: 10px auto; 
+    text-align: center;
+  }
+  .sidebar ul{
+    list-style: none;
+    li{
+      color:white;
+      text-align: center;
+    }
+    li a{
+      color:white;
+    }
+  }
+
+  .sidebar-name{
+    font-size:16px;
+  }
+  .sidebar-label{
+    font-size:14px;
+    color:rgb(230, 230, 230);
+    line-height: 2rem;
+    text-align: center;
+  }
+  .banner-text{
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    border-radius: 7.5px;
+    padding:0.5rem;
+    h2{
+      color:black;
+      line-height: 2rem;
+      font-size: 2.5rem;
+      margin:1rem 0;
+      font-weight: 600;
+    }
+    p{
+      color:#000;
+      font-size: 1rem;
+    }
+    
+  }
+  .display-picture{
+    padding:0.5rem;
+    margin:1rem 0;
+    img {
+      width: 100%;
+    }
+  }
+  .first{
+    order:2
+  }
+  .second{
+    order:1;
   }
 }
 
@@ -849,12 +718,13 @@ form {
   color:white;
   margin: 5% auto;
 }
-
-.display-picture{
-  img {
-    width: 80%;
-  }
+.contact-section{
+  padding: 0 80px;
+  display: flex;
+  flex-flow: row-reverse;
 }
+
+
 
 .contactButton{
   padding: 0.85rem;
@@ -872,9 +742,18 @@ form {
     text-decoration: none;
   }
 }
+.button-pad{
+  padding-left: 3.95rem;
+  padding-right: 3.95rem;
+} 
 
 .project-image{
   img{
     width:100%;
   }
+}
+
+.contact-modal-form{
+  height: 300px;
+  background: red;
 }
