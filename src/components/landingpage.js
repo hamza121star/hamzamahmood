@@ -27,7 +27,7 @@ class LandingPage extends Component {
                     <Grid className="landing-grid">
                         <div className="contact-section col-lg-12">
                             <FormModal show={this.state.showModal} hideModalHandler={this.hideModalHandler} />
-                            <div className="my-4 float-right">
+                            <div className="my-3">
                                 <div className="contactButton button-pad mr-3 btn"><a href={Resume} target="_blank" rel="noopener noreferrer">My Resume</a></div>
                                 <div className="contactButton button-pad btn" onClick={this.showModalHandler}>Contact Me</div>
                                 
@@ -43,7 +43,7 @@ class LandingPage extends Component {
                                     I am currently working on designing the next generation fact-checking platform for <a href="https://www.facebook.com/SURKHI.pk/" target="_blank" rel="noopener noreferrer">Surkhi</a> and
                                     leading a wonderful team of engineers and designers.
                                 </p>
-                                <div className="mt-5">
+                                <div className="button-center mt-5">
                                     <div className="contactButton btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Connect with me on Linkedin</a></div>
                                 </div>
                             </div>
@@ -52,6 +52,9 @@ class LandingPage extends Component {
                                 <img src={displayPicture} />
                         </div>
                     </Grid>
+                    <div className="my-4 d-flex justify-content-center">
+                        <hr style={{width:'720px', borderColor:'#4B1248'}}/> 
+                    </div>
                     <Grid className="about-section">
                         <div className="col-12 col-md-6">
                             <section className="project-left-section">
@@ -61,25 +64,28 @@ class LandingPage extends Component {
                             </section>
                         </div>
                         <div className="col-12 col-md-6">
-                            <section  className="project-right-section">
+                            <section className="project-right-section">
                                 <h2>Surkhi.pk </h2>
                                 <h3>Product Designer Lead (April 2018 -  Present)</h3>
-                                <p className="about-right-sec">
-                                Helped found Surkhi which started out as a Instagram page that flaired false news within the subcontinent</p>
+                                <p>  Co-founded Surkhi which started out with an Instagram page that flaired false news within the 
+                                    subcontinent</p>
                                 <p>- Incorporated Design Thinking practices within the product development team to showcase a 'move fast, iterate rapidly'
                                     strategy with a clear goal in mind and prioritizing quality. </p>
                                 <p>- I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
                                 <p>- Designed the visual identity and framework to help align creative and marketing with the brand </p>
                                 <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
                                 <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page</p>
-                                <div className="mt-5">
+                                <div className="button-center mt-5">
                                     <div className="contactButton button-pad btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
                                 </div>
                             </section>
                         </div>
                     </Grid>
+                    <div className="my-4 d-flex justify-content-center">
+                        <hr style={{width:'720px', borderColor:'#4B1248'}}/> 
+                    </div>
                     <Grid className="about-section">
-                        <div className="col-12 col-md-6">
+                        <div className="first col-12 col-md-6">
                             <section  className="project-right-section">
                                 <h2>UX Case Study: Amazon Mobile App</h2>
                                 <h3>Usability Researcher (Jan 2019 - Apr 2019)</h3>
@@ -93,7 +99,7 @@ class LandingPage extends Component {
                                 </div>
                             </section>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="second col-12 col-md-6">
                             <section className="project-left-section">
                                 <div className="project-image">
                                     <img src={AmazonCaseStudy} />
@@ -101,10 +107,13 @@ class LandingPage extends Component {
                             </section>
                         </div>
                     </Grid>
+                    <div className="my-4 d-flex justify-content-center">
+                        <hr style={{width:'720px', borderColor:'#4B1248'}}/> 
+                    </div>
                 </section>
-                <Grid>
+                <div>
                     <Portfolio />
-                </Grid>
+                </div>
                 <Grid className="why-me">
                     <div style={{textAlign: 'center', padding:'5px'}}>
                             <h1> WHY ME?</h1>
