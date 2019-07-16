@@ -105,11 +105,11 @@ const LandingPage = () => {
                                     subcontinent. Currently leading a talented young team of designers and engineers in partnership
                                     with policy researchers and institutes to battle fake news using technology.  </p>
                                 <p>- Incorporated Design Thinking practices within the product development team to showcase a 'move fast, iterate rapidly'
-                                    strategy with a clear goal in mind and prioritizing quality. </p>
-                                <p>- I also expanded design capability to support all business needs including product, industrial and marketing design.</p>
-                                <p>- Designed the visual identity and framework to help align creative and marketing with the brand </p>
-                                <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
-                                <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page</p>
+                                    strategy with a clear goal in mind while prioritizing quality. </p>
+                                <p>- I also expanded design capability to support all business needs including product, visual and marketing design.</p>
+                                <p>- Designed the visual identity and framework to help align creative and marketing with the brand. </p>
+                                <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch. </p>
+                                <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page.</p>
                                 <div className="button-center mt-5">
                                     <div className="contactButton button-pad btn"><a href="https://suspicious-euclid-efb30f.netlify.com/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
                                 </div>
