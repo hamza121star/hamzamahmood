@@ -1,37 +1,71 @@
-import React, {Component} from 'react';
-import {Grid, Cell} from 'react-mdl';
-import About from './about-me';
+import React from 'react';
+import {Grid} from 'react-mdl';
 import Portfolio from './portfolio';
-import FormModal from './form';
 import displayPicture from '../assets/images/hamza-mahmood-full.png';
 import SurkhiPage from '../assets/images/Surkhi-website-page.png';
 import AmazonCaseStudy from '../assets/images/Amazon-Case-Study.png';
 import Resume from '../assets/documents/Product_Designer_Resume_Hamza_Mahmood.pdf'
+import {Form, Modal, Button} from 'react-bootstrap';
 
-class LandingPage extends Component {
-    state = {
-        showModal: false
-    }
 
-    showModalHandler = (event) => {
-        this.setState({showModal: true})
-    }
-    hideModalHandler = (event) => {
-        this.setState({showModal: false})
-    }
+// function MyVerticallyCenteredModal(props) {
+//     return (
+//     <Modal
+//         {...props}
+//         size="md"
+//         aria-labelledby="contained-modal-title-vcenter"
+//         centered
+//     >
+//         <Modal.Header closeButton>
+//             <Modal.Title id="contained-modal-title-vcenter">
+//                 Modal heading
+//             </Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>
+//         <Form classnetlify netlify-honeypot="bot-field" hidden>
+//             <Form.Group controlId="formBasicEmail">
+//                 <Form.Label>Email address</Form.Label>
+//                 <Form.Control type="email" name="email" placeholder="Enter email" />
+//                 <Form.Text className="text-muted">
+//                     I will be able to reply back to you with your email! <span role="img">😊</span>
+//                 </Form.Text>
+//             </Form.Group>
 
-    render() {
+//             <Form.Group controlId="exampleForm.ControlTextarea1">
+//                 <Form.Label>Your Message</Form.Label>
+//                 <Form.Control as="textarea" name="message" rows="3" />
+//             </Form.Group>
+//             <Button variant="primary" type="submit">
+//                 Submit
+//             </Button>
+//         </Form>
+//         </Modal.Body>
+//         <Modal.Footer>
+//             <Button onClick={props.onHide}>Close</Button>
+//         </Modal.Footer>
+//     </Modal>
+//     );
+// }
+
+const LandingPage = () => {
+        const [modalShow, setModalShow] = React.useState(false);
         return(
             <div>
                 <section className="main-content-side">
                     <Grid className="landing-grid">
                         <div className="contact-section col-lg-12">
-                            <FormModal show={this.state.showModal} hideModalHandler={this.hideModalHandler} />
                             <div className="my-3">
                                 <div className="contactButton button-pad btn"><a href={Resume} target="_blank" rel="noopener noreferrer">My Resume</a></div>
-                                <div className="contactButton button-pad btn" onClick={this.showModalHandler}>Contact Me</div>
+                                <div className="contactButton button-pad btn">
+                                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hamza.mahmood1993@gmail.com&su=Contacting%20through%20Website&body=Dear%20Hamza,%0A&tf"  target="_blank" rel="noopener noreferrer">Contact Me</a>
+                                    </div>
+                                {/* <div className="contactButton button-pad btn" onClick={() => setModalShow(true)}>Contact Me</div> */}
                                 
                             </div>
+                            {/* <MyVerticallyCenteredModal
+                                show={modalShow}
+                                onHide={() => setModalShow(false)}
+                            /> */}
                         </div>
                         <div className="first col-md-6 col-lg-6">
                             <div className="banner-text">
@@ -76,7 +110,7 @@ class LandingPage extends Component {
                                 <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch </p>
                                 <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page</p>
                                 <div className="button-center mt-5">
-                                    <div className="contactButton button-pad btn"><a href="https://www.linkedin.com/in/hmahmood93/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+                                    <div className="contactButton button-pad btn"><a href="https://suspicious-euclid-efb30f.netlify.com/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
                                 </div>
                             </section>
                         </div>
@@ -114,9 +148,9 @@ class LandingPage extends Component {
                 <div>
                     <Portfolio />
                 </div>
-                <Grid className="why-me">
-                    <div style={{textAlign: 'center', padding:'5px'}}>
-                            <h1> WHY ME?</h1>
+                {/* <Grid className="why-me">
+                    <div>
+                        <h1> Strengths</h1>
                     </div>
                     <div style={{padding: '0px'}}>
                         <About 
@@ -138,10 +172,9 @@ class LandingPage extends Component {
                             description = "I am always open to challanges and healthy discussions that pique my mind and allow me to reflect upon the contemporary problems of today, what solutions work and which ones do not. This allows me to achieve a more in-depth understanding of the world around me and to form possible out-of-the-box solutions while keeping the assumptions and expectations of the stakeholder in check. My approach involves treating existing problems as if they are unique, which always gives way to learning something new."
                         />
                     </div>
-                </Grid>
+                </Grid> */}
             </div>       
         )
-    }
 }
 
 export default LandingPage;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Logo from '../assets/images/favicon.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
+import { Navbar, Nav } from 'react-bootstrap';
 
 
 class FixedSide extends Component{
@@ -34,8 +34,9 @@ class FixedSide extends Component{
                     </div>
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>Surkhi</li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><a href="https://suspicious-euclid-efb30f.netlify.com/">Surkhi</a></li>
+                            <hr />
                         </ul>
                     </nav>
                     <ul>
