@@ -533,11 +533,31 @@ $field-color:#E8E9EA;
   }
 }
 
+.contactButton{
+  margin: 5px;
+  padding: 0.85rem;
+  background: #78154d;
+  border-color: #78154d;
+  &:hover{
+    background:#6a0a40;
+    border-color:#6a0a40;
+  }
+  &:active, &:focus{
+    background: #78154d;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+}
 
 
 
 /// SIDEBAR CSS
-@media screen and (min-width: 451px){
+@media screen and (min-width: 881px){
+  .mobile-nav{
+    display:none;
+  }
   .main-content-side{
     width:75%;
     float:right;
@@ -618,7 +638,7 @@ $field-color:#E8E9EA;
   .display-picture{
     img {
       width: 100%;
-      padding: 0 80px;
+      padding: 0 70px;
     }
   }
   .contact-section{
@@ -626,10 +646,69 @@ $field-color:#E8E9EA;
     display: flex;
     flex-flow: row-reverse;
   }
+  .button-pad{
+    padding-left: 4.15rem;
+    padding-right: 4.15rem;
+  } 
   
 }
 
 @media only screen and (max-width: 800px){
+  .mobile-nav{
+    background:white;
+    padding: 0px;
+    
+  }
+  .nav-brand{
+    img{
+      margin: 1rem 0rem;
+      width:35px;
+      height:auto;
+    }
+  }
+  .nav-toggler, .nav-brand{
+    margin: 0rem 1rem;
+  }
+  .navbar-content {
+    background:#E8E9EA;
+    padding: 0;
+  }
+  .display-picture{
+    img {
+      width: 100%;
+      padding: 0 70px;
+    }
+  }
+  .first{
+    order:2;
+  }
+  .second{
+    order:1;
+  }
+  .nav-name{
+    margin: 0px 10px;
+    font-size:0.9rem;
+    font-weight:500;
+    color:black;
+  }
+  .mobile-label{
+    text-align: left;
+    color:#888;
+    font-size:0.9rem;
+    margin: 0rem 1rem;
+  }
+  .mobile-link{
+    text-align: center;
+    color:#888;
+    font-size:1.2rem;
+    margin: 1rem 0rem;
+  }
+  .nav-link:hover{
+    color:#78154d !important;
+  }
+  .sidebar{
+    display: none;
+  }
   .main-content-side {
     margin: 0 !important;
     padding: 20px !important;
@@ -660,6 +739,7 @@ $field-color:#E8E9EA;
   }
   .sidebar ul{
     list-style: none;
+    padding: 0;
     li{
       color:white;
       text-align: center;
@@ -716,10 +796,29 @@ $field-color:#E8E9EA;
   .contact-section{
     padding: 0 10px;
     text-align:center;
+    margin: 10px 0px;
     .button-pad{
-      padding-left: 3rem;
-      padding-right: 3rem;
+      max-width: 100%;
+      // padding-left: 3rem;
+      // padding-right: 3rem;
     } 
+  }
+  .contactButton{
+    margin: 0.5rem 0.2rem;
+    padding: 0.85rem 3rem;
+    background: #78154d;
+    border-color: #78154d;
+    &:hover{
+      background:#6a0a40;
+      border-color:#6a0a40;
+    }
+    &:active, &:focus{
+      background: #78154d;
+    }
+    a{
+      color:white;
+      text-decoration: none;
+    }
   }
   .project-right-section{
     text-align: left;
@@ -746,26 +845,7 @@ $field-color:#E8E9EA;
   margin: 5% auto;
 }
 
-.contactButton{
-  padding: 0.85rem;
-  background: #78154d;
-  border-color: #78154d;
-  &:hover{
-    background:#6a0a40;
-    border-color:#6a0a40;
-  }
-  &:active, &:focus{
-    background: #78154d;
-  }
-  a{
-    color:white;
-    text-decoration: none;
-  }
-}
-.button-pad{
-  padding-left: 3.95rem;
-  padding-right: 3.95rem;
-} 
+
 
 .project-image{
   img{

@@ -28,7 +28,7 @@ class LandingPage extends Component {
                         <div className="contact-section col-lg-12">
                             <FormModal show={this.state.showModal} hideModalHandler={this.hideModalHandler} />
                             <div className="my-3">
-                                <div className="contactButton button-pad mr-3 btn"><a href={Resume} target="_blank" rel="noopener noreferrer">My Resume</a></div>
+                                <div className="contactButton button-pad btn"><a href={Resume} target="_blank" rel="noopener noreferrer">My Resume</a></div>
                                 <div className="contactButton button-pad btn" onClick={this.showModalHandler}>Contact Me</div>
                                 
                             </div>

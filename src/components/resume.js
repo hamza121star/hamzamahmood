@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
-import Skill from './skill';
 
 class Resume extends Component {
 
@@ -74,21 +73,21 @@ class Resume extends Component {
                             <Cell col={6}>
                                 <p style={{fontWeight:'900', fontSize:'1.2em'}}>Full Stack Developer Specific Skills</p>
                                 <div style={{marginRight: '55px'}}>
-                                    <Skill skillset = "React & Redux" percentage = {100}/>
+                                    {/* <Skill skillset = "React & Redux" percentage = {100}/>
                                     <Skill skillset = "HTML5, CSS3 & Sass" percentage = {100}/>
                                     <Skill skillset = "Angular" percentage = {90}/>
                                     <Skill skillset = "Java" percentage = {80}/>
-                                    <Skill skillset = "Python" percentage = {80}/>
+                                    <Skill skillset = "Python" percentage = {80}/> */}
                                 </div>
                             </Cell>
                             <Cell col={6}>
                                 <p style={{fontWeight:'900', fontSize:'1.2em'}}>UX Designer Specific Skills</p>
                                 <div style={{marginRight: '25px'}}>
-                                    <Skill skillset = "High Fidelity Prototyping" percentage = {100}/>
+                                    {/* <Skill skillset = "High Fidelity Prototyping" percentage = {100}/>
                                     <Skill skillset = "Wireframing and Mockup generation" percentage = {95}/>
                                     <Skill skillset = "Usability Study and Data Analysis" percentage = {90}/>
                                     <Skill skillset = "UI Conceptualization" percentage = {90}/>
-                                    <Skill skillset = "Motion Design" percentage = {80}/>
+                                    <Skill skillset = "Motion Design" percentage = {80}/> */}
                                 </div>
                             </Cell>
                         </Grid>
