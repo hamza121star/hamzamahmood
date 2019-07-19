@@ -47,7 +47,7 @@ class FixedSide extends Component{
                     </ul>
                     <footer>
                         <div>
-                            <p>&copy; 2019. A basic website. Always a work in progress.</p>
+                            <p>Design always in progress. &copy; 2019.</p>
                         </div>
                     </footer>
                     

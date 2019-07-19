@@ -111,7 +111,7 @@ const LandingPage = () => {
                                 <p>- Collaborated with engineers in developing the pipeline of the platform from design to launch. </p>
                                 <p>- Created all infographics, visualizations and marketing content for the company's <a href="https://www.instagram.com/surkhi.pk/" target="_blank" rel="noopener noreferrer">Instagram</a> page.</p>
                                 <div className="button-center mt-5">
-                                    <div className="contactButton button-pad btn"><a href="https://suspicious-euclid-efb30f.netlify.com/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+                                    <div className="contactButton button-pad btn"><a href="https://www.behance.net/gallery/83009489/Surkhi-Visual-Identity-Brand-Guidelines" target="_blank" rel="noopener noreferrer">Learn More</a></div>
                                 </div>
                             </section>
                         </div>
