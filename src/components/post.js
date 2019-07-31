@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
-import {Grid, Cell} from 'react-mdl';
-import {withRouter,Route} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 class Post extends Component {
     render(){   
-        console.log("Here");
-        console.log(this.props);
         const post = this.props.post ? (
-            <div>
+            <div className='blog-side'>
                 <div className="aspect-ratio-placeholder">
                     <div className="indv-disp">
                         <img src={require(`../assets/images/${this.props.post.disp}`)}/>
@@ -34,10 +31,10 @@ class Post extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    let id = ownProps.match.params.post_id;
-    console.log(id);
+    let postName = ownProps.match.params.name;
+    console.log(postName);
     return {
-        post: state.posts.find(post => post.id === id)
+        post: state.posts.find(post => post.name === postName)
     }
 }
 

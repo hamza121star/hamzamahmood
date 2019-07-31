@@ -6,15 +6,14 @@ import {connect} from 'react-redux';
 
 class Writing extends Component {
     render() {
-        console.log(this.props);
         const { posts } = this.props;
         const postList = posts.length ? (
             posts.map(post => {
                 return(
                     <div className="post-parent col-sm-12 col-md-12 col-lg-12 post-card">
                         <Grid>
-                                <Link style={{color:'black'}} to={'/' + post.id}>
-                                    <div key={post.id}>
+                                <Link style={{color:'black'}} to={'/' + post.name}>
+                                    <div key={post.name}>
                                         <Cell col={8} className="card-content" style={{display:'inline-block'}}>
                                             <div className="writing-card-title">
                                                 <span>{post.title}</span>

@@ -34,7 +34,7 @@ class AmazonAppRedesign extends Component {
                 <p>
                 With time as I gained more experience as a UX engineer, I started closely observing the additions being introduced 
                 into the app with a multitude of features that most people never got to discover (Amazon Programs, the scan item 
-                feature among other). One thing, in particular, bothered me about the mobile version: the information clutter 
+                feature among others). One thing, in particular, bothered me about the mobile version: the information clutter 
                 present in most of their pages and the element of newness in their UI which the app severely lacks. So, I picked my 
                 pencil and piece of paper then started jotting down ideas that could potentially improve the usability of the app.
                 </p>
@@ -76,7 +76,7 @@ class AmazonAppRedesign extends Component {
                 workflow of the app that will go a long way in securing and retaining users, especially those within the younger age
                 bracket.
                 </p>
-                <p className="quote">As an aside, I did not have any access to the massive data that Amazon has collected over the years. All the 
+                <p className="quote">As a major consideration, I did not have any access to the massive data that Amazon has collected over the years. All the 
                 decisions their development team has made is backed by years of analytics on user behavior, navigation, and purchase
                 trends. With that in mind, the concept I present is not exhaustive and is solely based on data collected through 
                 guerilla usability testing. </p>
@@ -86,7 +86,7 @@ class AmazonAppRedesign extends Component {
                 <div>
                 <ul>
                     <li>To create a more enjoyable, accessible and clutter-free shopping experience.</li>
-                    <li>Drive UI design through empathy and Design Thinking.</li>
+                    <li>Drive UI design through <u>empathy</u> and <u>Design Thinking</u>.</li>
                     <li>Create designs which are backed by data from the usability study.</li>
                     <li>Use Proto.io to create refined, high fidelity mockups and, </li>
                     <li>Keeping the prototype consistent with Amazon's brand identity.</li>
@@ -143,8 +143,15 @@ class AmazonAppRedesign extends Component {
                     <li>shop an average 2–3 times per month on Amazon (platform agnostic). </li>
                     <li>are accustomed to using modern technology and find it easier to adopt newer technology.</li>
                     <li> 22 of 30 responders consider themselves as introverts.</li>
-                    <li>26 of 30 users would first research and read through the reviews before making a confirmed purchase </li>
+                    <li>26 of 30 users would first research and read through the reviews before making a confirmed purchase. </li>
                 </ul>
+                </div>
+
+                <div>
+                    <p className="comment">"There is too much text on the screen and too many options."</p>
+                    <p className="comment">"Make it easier to see which color and size options are available. Should be front-facing."</p>
+                    <p className="comment">"The prices aren't specific, I feel like for every product there should be a separate price option."</p>
+                    <p className="comment">Alot of information to digest.</p>
                 </div>
 
                 <p>Some interesting findings from the survey:</p>
@@ -158,18 +165,36 @@ class AmazonAppRedesign extends Component {
                     </ul>
                 </div>
 
-                <div className="added-image">
-                    <img src={Notes} alt="Goals and Pain Points"/>
-                    <p class="image-desc">Goals and Pain points established from user responses</p>
-                </div>
+                
                 
                 <p> <strong>User Goals:</strong> The goals Amazon users want to accomplish mainly revolved around the experience of 
                 buying a product as seamlessly as possible, potentially getting a bang for their buck. They want to save time going 
                 to a physical store and spending long hours traipsing through to find what they need. Also, when browsing through a 
                 product, a typical user would ideally check for reviews and see what others say before making a decision. </p>
+                
+                <div>
+                    <ul>
+                        <li className="goals">Find reviews, preferably in an organized manner</li>
+                        <li className="goals">Shop for high commodity or expensive item for cheap</li>
+                        <li className="goals">Buy trendy, fad or hypebeast items</li>
+                        <li className="goals">Buy commonly used items as ASAP</li>
+                    </ul>
+                </div>
+                
                 <p><strong>Pain points:</strong> Users shared a common sentiment that there is an overabundance of reviews on the 
                 product pages, irrelevant recommendations on their home feed and too many features that they do not particularly 
                 need.</p>
+
+                <div>
+                    <ul>
+                        <li className="pain-points">Reviews all over the place. TMI = Too much information</li>
+                        <li className="pain-points">Too many features, suggestions which are not relevant</li>
+                        <li className="pain-points">Difficult to remember items seen at a physical store/website</li>
+                        <li className="pain-points">Want to see what others are buying. Social element lacking</li>
+                    </ul>
+                </div>
+
+                
 
                 <h3 className="sub-sub-headings">User Persona & Branding</h3>
                 <p>The diagram below is a depiction of what a typical Amazon user's persona looks like based on the usability study 

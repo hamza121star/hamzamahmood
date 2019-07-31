@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Logo from '../assets/images/favicon.png';
 import {Link} from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTwitter, faGithub, faMediumM, faBehance, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 class FixedSide extends Component{
@@ -47,7 +49,17 @@ class FixedSide extends Component{
                     </ul>
                     <footer>
                         <div>
-                            <p>Design always in progress. &copy; 2019.</p>
+                            <p>Find me on these social platforms or email me at <a className="toWhite" href="mailto:hamza.mahmood1993@gmail.com">hamza.mahmood1993@gmail.com</a></p>
+                            <div className="social-icon-footer">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/storiesofatechie/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                                    <li><a href="https://twitter.com/mahmooyo"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                                    <li><a href="https://medium.com/@hamzamahmood"><FontAwesomeIcon icon={faMediumM} /></a></li>
+                                    <li><a href="https://github.com/hamza121star"><FontAwesomeIcon icon={faGithub} /></a></li>
+                                    <li><a href="https://www.behance.net/hamzamahmood2b65"><FontAwesomeIcon icon={faBehance} /></a></li>
+                                    <li><a href="https://www.linkedin.com/in/hmahmood93/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </footer>
                     

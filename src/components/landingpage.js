@@ -5,47 +5,7 @@ import displayPicture from '../assets/images/hamza-mahmood-full.png';
 import SurkhiPage from '../assets/images/Surkhi-website-page.png';
 import AmazonCaseStudy from '../assets/images/Amazon-Case-Study.png';
 import Resume from '../assets/documents/Product_Designer_Resume_Hamza_Mahmood.pdf'
-import {Form, Modal, Button} from 'react-bootstrap';
-
-
-// function MyVerticallyCenteredModal(props) {
-//     return (
-//     <Modal
-//         {...props}
-//         size="md"
-//         aria-labelledby="contained-modal-title-vcenter"
-//         centered
-//     >
-//         <Modal.Header closeButton>
-//             <Modal.Title id="contained-modal-title-vcenter">
-//                 Modal heading
-//             </Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//         <Form classnetlify netlify-honeypot="bot-field" hidden>
-//             <Form.Group controlId="formBasicEmail">
-//                 <Form.Label>Email address</Form.Label>
-//                 <Form.Control type="email" name="email" placeholder="Enter email" />
-//                 <Form.Text className="text-muted">
-//                     I will be able to reply back to you with your email! <span role="img">😊</span>
-//                 </Form.Text>
-//             </Form.Group>
-
-//             <Form.Group controlId="exampleForm.ControlTextarea1">
-//                 <Form.Label>Your Message</Form.Label>
-//                 <Form.Control as="textarea" name="message" rows="3" />
-//             </Form.Group>
-//             <Button variant="primary" type="submit">
-//                 Submit
-//             </Button>
-//         </Form>
-//         </Modal.Body>
-//         <Modal.Footer>
-//             <Button onClick={props.onHide}>Close</Button>
-//         </Modal.Footer>
-//     </Modal>
-//     );
-// }
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
         const [modalShow, setModalShow] = React.useState(false);
@@ -69,6 +29,7 @@ const LandingPage = () => {
                         </div>
                         <div className="first col-md-6 col-lg-6">
                             <div className="banner-text">
+                                <h3>👋</h3>
                                 <h2>Hello, I am Hamza.</h2>
                                 <p>
                                     A Product Designer and UX Researcher from Pakistan, currently based in New York City. 
@@ -132,7 +93,7 @@ const LandingPage = () => {
                                     user research data.</p>
                                 <p>- Validated results by testing the new design with volunteers who showed acceptibility of the prototype </p>
                                 <div className="mt-5">
-                                    <div className="contactButton button-pad btn"><a href="https://uxdesign.cc/i-felt-the-amazon-app-was-outdated-so-i-redesigned-it-using-design-thinking-a-ux-case-study-549c5880d9be" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+                                    <div className="contactButton button-pad btn"><Link to={'/' + 'amazon-usability-study'}>Learn More</Link></div>
                                 </div>
                             </section>
                         </div>
@@ -151,31 +112,6 @@ const LandingPage = () => {
                 <div>
                     <Portfolio />
                 </div>
-                {/* <Grid className="why-me">
-                    <div>
-                        <h1> Strengths</h1>
-                    </div>
-                    <div style={{padding: '0px'}}>
-                        <About 
-                            color = '#fefbfe'
-                            logo = 'fas fa-fist-raised'
-                            heading = 'Self Starter'
-                            description = "Right after I graduated from college, I dreamt of building my own startup from scratch, to learn the required tools and skills to launch a company from the bottoms up. With no external push, I dedicated myself to take my small firm in my home country of Pakistan and steadily bring it to a technological standard as practiced by Silicon Valley companies. I accomplished that by committing myself to research and applying my coding knowledge to design and implement an AI-based tool that aims to tackle deceptive news on the digital space."
-                        />
-                        <About 
-                            color = '#faebf9'
-                            logo = 'fas fa-handshake'
-                            heading = 'Collaborative'
-                            description = "I have worked with small and large cross-functional teams in building scalable solutions for company clients who want to achieve actionable results. I proactively assist my peers for us to collectively succeed and deliver on crucial deadlines. For instance, the marketing department at one of the company I worked with required the engineering team to set up an API to allow targeted email marketing on their web-based platform, which my engineering team willingly assisted with."
-                        />
-                        <About 
-                            color = '#f6dbf5'
-                            logo ='fas fa-lightbulb'
-                            heading = 'Curious Thinker'
-                            description = "I am always open to challanges and healthy discussions that pique my mind and allow me to reflect upon the contemporary problems of today, what solutions work and which ones do not. This allows me to achieve a more in-depth understanding of the world around me and to form possible out-of-the-box solutions while keeping the assumptions and expectations of the stakeholder in check. My approach involves treating existing problems as if they are unique, which always gives way to learning something new."
-                        />
-                    </div>
-                </Grid> */}
             </div>       
         )
 }

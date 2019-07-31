@@ -228,10 +228,12 @@ h3{
     max-height: 100%;
   }
 }
+.blog-side{
+  width: 75%;
+  float:right;
+}
 .aspect-ratio-placeholder{
-    position: relative;
     padding:0px;
-    width: 100%;
     margin: 0 auto;
     .indv-disp{
       top: 0;
@@ -488,11 +490,16 @@ $field-color:#E8E9EA;
 
 .philosophy-blog, .amazon-blog{
   padding-bottom: 20px;
+  .comment{
+    font-size:20px;
+    margin:3em 0em;
+    color:red;
+  }
   p,ol,ul{
-    font-family: 'Georgia, serif';
+    font-family: 'Roboto';
     line-height: 1.65;
     letter-spacing: 0.015em;
-    font-size:22px;
+    font-size:18px;
   }
   a{
     color:black;
@@ -775,6 +782,7 @@ $field-color:#E8E9EA;
     }
   }
 
+
   .sidebar-name{
     font-size:16px;
   }
@@ -843,6 +851,55 @@ $field-color:#E8E9EA;
       font-weight: 500;
       margin-top: 0;
       margin-bottom:1rem;
+    }
+  }
+}
+.toWhite{
+  color:white;
+}
+.toWhite:visited{
+  color: white;
+}
+.toWhite:hover{
+  color:#78154d;
+}
+.goals{
+  background: #2daa70;
+  color: white;
+  font-size: 15px;
+  margin: 0.5em;
+  padding: 2em 1em;
+  display: inline-flex;
+  width: 45%
+}
+.pain-points{
+  background: #DDA8A8;
+  color: white;
+  font-size: 15px;
+  margin: 0.5em;
+  padding: 2em 1em;
+  display: inline-flex;
+  width: 45%
+}
+.social-icon-footer{
+  position:relative;
+  text-align: center;
+  ul{
+    display: inline-flex;
+    padding: 0;
+    li:not(:last-child){
+      margin-right: 20px;
+    }
+    li{
+      a{
+        color:#e7e7e7;
+      }
+      a:hover{
+        color:#78154d;
+      }
+      svg{
+        font-size:20px !important;
+      }
     }
   }
 }
