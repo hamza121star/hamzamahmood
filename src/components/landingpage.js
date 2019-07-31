@@ -29,7 +29,7 @@ const LandingPage = () => {
                         </div>
                         <div className="first col-md-6 col-lg-6">
                             <div className="banner-text">
-                                <h3>👋</h3>
+                                <h3 className="hello">👋</h3>
                                 <h2>Hello, I am Hamza.</h2>
                                 <p>
                                     A Product Designer and UX Researcher from Pakistan, currently based in New York City. 

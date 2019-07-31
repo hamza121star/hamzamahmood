@@ -74,7 +74,6 @@ body {
 h2 {
   font-size:2em;
   line-height:1em;
-  padding-top:40px; 
   @include breakpoint(mama-bear) {
     padding-top:20px;
   }
@@ -126,6 +125,9 @@ h3{
     font-size: 40px;
     font-weight: bold;
   }
+}
+.hello{
+  margin:0;
 }
 
 .mdl-layout__drawer-button{
@@ -328,6 +330,7 @@ h3{
     color:black;
     font-size: 4rem;
     font-weight: 600;
+    
   }
   p{
     color:#000;
