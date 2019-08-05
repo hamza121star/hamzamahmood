@@ -37,7 +37,7 @@ class FixedSide extends Component{
                     <nav>
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><a href="https://suspicious-euclid-efb30f.netlify.com/">Surkhi</a></li>
+                            {/* <li><a href="https://suspicious-euclid-efb30f.netlify.com/">Surkhi</a></li> */}
                             <hr />
                         </ul>
                     </nav>
